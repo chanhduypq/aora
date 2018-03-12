@@ -1,0 +1,6 @@
+[11-Dec-2017 19:06:49 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/Marketplace.php on line 7
+[11-Dec-2017 19:06:51 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/Country.php on line 7
+[11-Dec-2017 19:06:52 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/BillingAddress.php on line 8
+[11-Dec-2017 19:07:15 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/Marketplace.php on line 7
+[11-Dec-2017 19:07:17 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/Country.php on line 7
+[11-Dec-2017 19:07:17 America/Los_Angeles] PHP Fatal error:  Class 'Illuminate\Database\Eloquent\Model' not found in /home/phptools/public_html/ezbuy_demo/app/BillingAddress.php on line 8

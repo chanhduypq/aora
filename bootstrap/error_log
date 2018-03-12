@@ -1,0 +1,8 @@
+[11-Dec-2017 19:06:52 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/phptools/public_html/ezbuy_demo/bootstrap/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/phptools/public_html/ezbuy_demo/bootstrap/app.php on line 16
+[11-Dec-2017 19:07:19 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/phptools/public_html/ezbuy_demo/bootstrap/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/phptools/public_html/ezbuy_demo/bootstrap/app.php on line 16

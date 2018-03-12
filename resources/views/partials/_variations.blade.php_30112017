@@ -1,0 +1,10 @@
+@foreach($product->variationsGroup as $id => $options)
+<div class="item-conf">
+    <div class="item-prop">
+        <div class="item-label">{{ $id }}</div>
+        <div class="btn-groups" data-toggle="buttons">
+            @include('partials._variation')
+        </div>
+    </div>
+</div>
+@endforeach

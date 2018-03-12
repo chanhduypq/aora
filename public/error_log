@@ -1,0 +1,11 @@
+[24-Nov-2017 06:50:12 America/Los_Angeles] PHP Warning:  include(/home/phptools/public_html/ezbuy_demo/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/phptools/public_html/ezbuy_demo/vendor/composer/ClassLoader.php on line 414
+[24-Nov-2017 06:50:12 America/Los_Angeles] PHP Warning:  include(): Failed opening '/home/phptools/public_html/ezbuy_demo/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/phptools/public_html/ezbuy_demo/vendor/composer/ClassLoader.php on line 414
+[24-Nov-2017 06:50:12 America/Los_Angeles] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application-> in /home/phptools/public_html/ezbuy_demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[01-Mar-2018 00:23:16 America/Los_Angeles] PHP Warning:  require(/home/phptools/public_html/ezbuy_demo/public/dev/../../../vendor/autoload.php): failed to open stream: No such file or directory in /home/phptools/public_html/ezbuy_demo/public/dev/index.php on line 24
+[01-Mar-2018 00:23:16 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '/home/phptools/public_html/ezbuy_demo/public/dev/../../../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/phptools/public_html/ezbuy_demo/public/dev/index.php on line 24

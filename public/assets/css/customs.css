@@ -1,0 +1,18 @@
+.dl-js-sortable {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.dl-current-sort {
+    opacity: 1 !important;
+}
+.dl-ico-action a {
+    text-align: center;
+    color: #34495e;
+    font-size: 21px;
+}
+.dl_admin_form .row {
+    margin: 20px;
+}
+.dl_admin_form .row label{
+    line-height: 28px;
+}
