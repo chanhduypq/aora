@@ -93,6 +93,10 @@
                                     <div class="a-row a-spacing-mini review-data review-format-strip">
                                         <span data-hook="format-strip-linkless" class="a-color-secondary">
                                             {{ $comment['string1'] }}<i class="a-icon a-icon-text-separator" aria-label="|"><span class="a-icon-alt">|</span></i>{{ $comment['string2'] }}
+                                        @if ($comment['string3']!='')
+                                            <i class="a-icon a-icon-text-separator" aria-label="|"><span class="a-icon-alt">|</span></i>
+                                            <span data-hook="avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">{{ $comment['string3'] }}</span>
+                                        @endif
                                         </span>
                                     </div>
                                     <div class="a-row review-data">

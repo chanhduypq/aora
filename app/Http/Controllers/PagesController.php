@@ -137,7 +137,10 @@ class PagesController extends Controller
             }
 
 
-            list($comment['string1'], $comment['string2']) = explode("|", $node->find("div[class='a-row a-spacing-mini review-data review-format-strip']", 0)->plaintext);
+            $temp = explode("|", $node->find("div[class='a-row a-spacing-mini review-data review-format-strip']", 0)->plaintext);
+            $comment['string1'] = $temp[0];
+            $comment['string2'] = isset($temp[1]) ? $temp[1] : '';
+            $comment['string3'] = isset($temp[2]) ? $temp[2] : '';
 
             $comment['content'] = $node->find('div[data-hook="review-collapsed"]', 0)->plaintext;
             $comments[] = $comment;
