@@ -156,6 +156,22 @@ class Parser
         $is_a_variant = false;
 
         $response = $this->fetchAmazonAPI($asin);
+        
+        $array = (array) $response;
+//        echo '<pre>';
+//        var_dump($array);
+//        echo '</pre>';
+//        exit;
+//        if (isset($array['Items']['Item']['ItemLinks']['ItemLink'][5]['URL'])) {
+//            $reviewUrl = $array['Items']['Item']['ItemLinks']['ItemLink'][5]['URL'];
+//        } else {
+//            $reviewUrl = '';
+//        }
+        if (isset($array['Items']['Item']['DetailPageURL'])) {
+            $reviewUrl = $array['Items']['Item']['DetailPageURL'];
+        } else {
+            $reviewUrl = '';
+        }
 
         if (empty($response) || empty($response['Items']['Item']))
             return false;
@@ -189,23 +205,23 @@ class Parser
             $node_name .= $nodeNames[$i].' > ';
         }
         $node_name = trim($node_name,' >');
-        echo $node_name;
-        echo '<br>';
-        echo 'Men\'s Clothing';
-        echo ' -- ';
-        similar_text($node_name, 'Men\'s Clothing', $percent);
-        echo $percent;
-        echo '<br>';
-        echo 'Women\'s Clothing';
-        echo ' -- ';
-        similar_text($node_name, 'Women\'s Clothing', $percent);
-        echo $percent;
-        echo '<br>';
-        echo 'Kitchen & Household Items';
-        echo ' -- ';
-        similar_text($node_name, 'Kitchen & Household Items', $percent);
-        echo $percent;
-        exit();
+//        echo $node_name;
+//        echo '<br>';
+//        echo 'Men\'s Clothing';
+//        echo ' -- ';
+//        similar_text($node_name, 'Men\'s Clothing', $percent);
+//        echo $percent;
+//        echo '<br>';
+//        echo 'Women\'s Clothing';
+//        echo ' -- ';
+//        similar_text($node_name, 'Women\'s Clothing', $percent);
+//        echo $percent;
+//        echo '<br>';
+//        echo 'Kitchen & Household Items';
+//        echo ' -- ';
+//        similar_text($node_name, 'Kitchen & Household Items', $percent);
+//        echo $percent;
+//        exit();
         $price = 0;
         if(!empty($item['VariationSummary']['LowestPrice']['Amount']))
             $price = $item['VariationSummary']['LowestPrice']['Amount'] / 100;
@@ -447,6 +463,7 @@ class Parser
         $data['weightGram'] = !empty($data['weight']) ? round($data['weight'] * config('settings.units.pound_eq_gram'), 2) : '';
 
         $data['nodes'] = $nodes;
+        $data['review_url'] = $reviewUrl;
 
         return (object)$data;
     }

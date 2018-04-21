@@ -29,7 +29,7 @@ class GlobalComposer
 
         $view
             ->with([
-                'cart_count' => count($cart),
+                'cart_count' =>0,// count($cart),
                 'rate' => $rateExchange->price,
                 'siteCurrency' => config('settings.currencies.site_currency'),
                 'shopCurrency' => config('settings.currencies.shop_currency'),
